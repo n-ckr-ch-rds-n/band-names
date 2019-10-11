@@ -1,6 +1,8 @@
-const AWS = require("aws-sdk");
-const uuidv1 = require('uuid/v1');
-require('dotenv').config();
+import AWS from "aws-sdk";
+import uuidv1 from "uuid/v1";
+import {config} from "dotenv";
+
+config();
 
 AWS.config.update({
     region: "us-east-1",
